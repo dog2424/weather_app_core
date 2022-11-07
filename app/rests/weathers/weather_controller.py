@@ -6,7 +6,7 @@ from app.models.list_response import ListResponse
 
 class WeatherController:
 
-    def weathers(request: httpRequest) -> HttpResponse:
+    def weathers(request: HttpRequest) -> HttpResponse:
         if request.method == "GET":
 
             ListResponse: ListResponse = None
